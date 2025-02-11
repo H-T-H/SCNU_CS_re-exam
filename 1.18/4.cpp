@@ -14,8 +14,9 @@ class Complex{
         };
 
         friend std::ostream& operator<<(std::ostream& os, const Complex& c){
-          if(c.imag<0)    os<<c.real<<c.imag<<"i";
-          else            os<<c.real<<"+"<<c.imag<<"i";
+            if(c.imag<0)    os<<c.real<<c.imag<<"i";
+            else            os<<c.real<<"+"<<c.imag<<"i";
+            return os;
         };
 
 };
