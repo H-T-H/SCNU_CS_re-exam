@@ -8,5 +8,29 @@
 需要自己实现字符串模式匹配的逻辑 (例如，使用朴素的模式匹配算法)。
 */
 
+#include<string>
+#include<iostream>
+using namespace std;
 
-//看到字符串就烦，年后再写
+int findPattern(string text,string pattern){
+    for(int i = 0;i < text.size()-pattern.size();i++){
+        bool exist = true;
+        for(int j = 0;j < pattern.size();j++){
+          if(text[i+j] != pattern[j]){
+            exist = false;
+            break;
+          }
+        }
+        if(exist)    return i;
+    }
+    return -1;
+}
+
+int main(){
+  string text = "hello, what's your name?";
+  string pattern1 = "hello";
+  string pattern2 = "no";
+  string pattern3 = "what's";
+  cout<<findPattern(text,pattern1)<<endl<<findPattern(text,pattern2)<<endl<<findPattern(text,pattern3)<<endl;;
+
+}
