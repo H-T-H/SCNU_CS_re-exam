@@ -56,7 +56,7 @@ class LongLongInt{
         bool largeEqualThan(const LongLongInt other);
         bool lessThan(const LongLongInt other);
         bool lessEqualThan(const LongLongInt other);
-    }
+    };
 int main(){
     char str_1[] = "1234567";
     char str_2[] = "7654321";
