@@ -9,6 +9,9 @@ class vector{
         int N;//N维数
         int* nums;//各个维数的数值
     public:
+        ~vector(){
+            delete[] nums;
+        }
         vector(int N,int* nums_):N(N),nums(nums_){}//构造函数
         vector operator+(const vector other){
             int* nums_ = new int[N];
