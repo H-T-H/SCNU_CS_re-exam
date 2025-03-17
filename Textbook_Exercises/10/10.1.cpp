@@ -52,7 +52,7 @@ class LongLongInt{
             }
             return false;
         };
-        bool largeThan(const LongLongInt other){};
+        bool largeThan(const LongLongInt other);
         bool largeEqualThan(const LongLongInt other);
         bool lessThan(const LongLongInt other);
         bool lessEqualThan(const LongLongInt other);
