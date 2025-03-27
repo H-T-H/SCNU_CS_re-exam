@@ -16,3 +16,9 @@ int数组：{5,1,4,2,8}
 1 2 4 5 8
 apple orange pear
 */
+
+template<typename T>
+void bubbleSortIterative(T arr[], int n){}
+
+template<typename T>
+void bubbleSortRecursive(T arr[], int n){}
